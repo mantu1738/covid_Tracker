@@ -7,7 +7,7 @@ import CountryPicker from "./components/CountryPicker/CountryPicker.jsx";
 
 import styles from './App.module.css';
 
-import { fetchData } from "./api/index.js";
+import { fetchData} from "./api/index.js";
 class App extends React.Component {
 
     state = {
@@ -18,6 +18,7 @@ class App extends React.Component {
         const fetchedData = await fetchData();
         this.setState({data : fetchedData});
     }
+
 
     render() {
         return(
